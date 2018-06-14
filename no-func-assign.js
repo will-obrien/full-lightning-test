@@ -15,7 +15,7 @@ function foo2() {}
 var foo3 = function () {}
 foo3 = bar;
 
-function foo4foo4) { // `foo` is shadowed.
+function foo4(foo4) { // `foo` is shadowed.
     foo4 = bar;
 }
 
