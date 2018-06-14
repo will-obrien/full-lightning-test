@@ -2,23 +2,23 @@
 function foo() {}
 foo = bar;
 
-function foo() {
-    foo = bar;
+function foo1() {
+    foo1 = bar;
 }
 
-foo = bar;
-function foo() {}
+foo2 = bar;
+function foo2() {}
 
 
 
 //correct
-var foo = function () {}
-foo = bar;
+var foo3 = function () {}
+foo3 = bar;
 
-function foo(foo) { // `foo` is shadowed.
-    foo = bar;
+function foo4foo4) { // `foo` is shadowed.
+    foo4 = bar;
 }
 
-function foo() {
-    var foo = bar;  // `foo` is shadowed.
+function foo5() {
+    var foo5 = bar;  // `foo` is shadowed.
 }
