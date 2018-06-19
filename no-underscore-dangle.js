@@ -30,7 +30,3 @@ class Foo {
 const o = {
   _bar() {}
 };
-
-const o = {
-  bar_() = {}
-};
