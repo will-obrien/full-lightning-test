@@ -22,3 +22,12 @@ function loadData (error, data) {
   }
   doSomething();
 }
+
+
+//correct with reg ex ^coolErr+
+function loadData (coolErr, data) {
+  if (coolErr) {
+     doStuff();
+  }
+  doSomething();
+}
