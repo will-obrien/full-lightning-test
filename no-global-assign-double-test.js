@@ -1,14 +1,23 @@
 // all global objects checked and their assignments and reassignments 
 
 var Object;
+Object = 16;
 var Function;
+Function = 13;
 var Boolean;
+Boolean = 4;
 var Symbol;
+Symbol = 3;
 var Error;
+Error = 6456;
 var EvalError;
+EvalError = {};
 var InternalError;
+InternalError = 3;
 var RangeError;
+RangeError = 55;
 var ReferenceError;
+ReferenceError = 4;
 var SyntaxError;
 var TypeError;
 var URIError;
