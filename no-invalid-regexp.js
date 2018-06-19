@@ -11,3 +11,8 @@ RegExp('.')
 new RegExp
 
 this.RegExp('[')
+
+
+//correct with yu
+
+RegExp('.', 'yu')
