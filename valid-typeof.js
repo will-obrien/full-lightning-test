@@ -2,7 +2,7 @@
 typeof foo === "strnig";
 typeof foo == "undefimed";
 typeof bar != "nunber";
-typeof bar !== "function";
+typeof bar !== "funsction";
 
 //correct
 typeof foo === "string";
