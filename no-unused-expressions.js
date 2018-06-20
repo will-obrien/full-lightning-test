@@ -26,37 +26,37 @@ injectGlobal`body{ color: red; }`
 
 function namedFunctionDeclaration () {}
 
-(function aGenuineIIFE () {}());
+(function aGenuineIIFE () {}())
 
-f()
+f();
 
-a = 0
+a = 0;
 
-new C
+new C;
 
-delete a.b
+delete a.b;
 
-void a
+void a;
 
 //incorrect allowShortCircuit": true
-a || b
+a || b;
 
 //correct allowShortCircuit": true
-a && b()
-a() || (b = c)
+a && b();
+a() || (b = c);
 
 //incorrect  "allowTernary": true 
-a ? b : 0
-a ? b : c()
+a ? b : 0;
+a ? b : c();
 
 //correct "allowTernary": true 
-a ? b() : c()
-a ? (b = c) : d()
+a ? b() : c();
+a ? (b = c) : d();
 
 
 
 //correct "allowShortCircuit": true, "allowTernary": true
-a ? b() || (c = d) : e()
+a ? b() || (c = d) : e();
 
 //incorrect allowTaggedTemplates": true
 `some untagged template string`;
