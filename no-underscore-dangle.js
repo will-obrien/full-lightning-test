@@ -14,9 +14,6 @@ var file = __filename;
 var a = this.foo_;
 this._bar();
 
-//correct for allowAfterSuper true
-var a = super.foo_;
-super._bar();
 
 //incorrect for enforceinmethodnames true
 class Foo1 {
