@@ -28,5 +28,5 @@ class Foo2 {
 }
 
 const o = {
-  function _bar() {}
+  _bar() {}
 };
