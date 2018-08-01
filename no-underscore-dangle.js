@@ -19,14 +19,14 @@ var a = super.foo_;
 super._bar();
 
 //incorrect for enforceinmethodnames true
-class Foo {
-  _bar() {}
+class Foo1 {
+  function _bar() {}
 }
 
-class Foo {
-  bar_() {}
+class Foo2 {
+  function bar_() {}
 }
 
 const o = {
-  _bar() {}
+  function _bar() {}
 };
