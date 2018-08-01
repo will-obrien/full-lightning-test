@@ -20,11 +20,11 @@ super._bar();
 
 //incorrect for enforceinmethodnames true
 class Foo1 {
-  function _bar() {}
+  _bar() {}
 }
 
 class Foo2 {
-  function bar_() {}
+  bar_() {}
 }
 
 const o = {
