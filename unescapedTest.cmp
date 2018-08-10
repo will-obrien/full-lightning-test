@@ -1,0 +1,13 @@
+<aura:component>
+
+<apex:outputText escaped="false">
+
+{! somehitng}
+</apex:outputText>
+
+<aura:unescapedHtml>
+
+{!$CURRENTPage.parameters.userInput}
+</aura:unescapedHtml>
+
+</aura:component>
