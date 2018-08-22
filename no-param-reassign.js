@@ -1,5 +1,5 @@
 //incorrect
-/*eslint no-param-reassign: "error"*/
+
 
 function foo1(bar1) {
     bar1 = 13;
@@ -17,7 +17,7 @@ function foo3(bar3) {
 }
 
 //Examples of **correct** code for the default `{ "props": false }` option:
-/*eslint no-param-reassign: ["error", { "props": false }]*/
+
 
 function foo4(bar4) {
     bar4.prop = "value";
@@ -32,7 +32,7 @@ function foo6(bar6) {
 }
 
 //Examples of **incorrect** code for the `{ "props": true }` option:
-/*eslint no-param-reassign: ["error", { "props": true }]*/
+
 
 function foo7(bar7) {
     bar7.prop = "value";
@@ -47,7 +47,7 @@ function foo9(bar9) {
 }
 
 //Examples of **correct** code for the `{ "props": true }` option with `"ignorePropertyModificationsFor"` set:
-/*eslint no-param-reassign: ["error", { "props": true, "ignorePropertyModificationsFor": ["bar"] }]*/
+
 
 function foo0(bar0) {
     bar0.prop = "value";
