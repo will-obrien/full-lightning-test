@@ -7,4 +7,5 @@ public global with sharing class MyClass {
    public void badMethod(){
       Integer x = 5;
       x = x;
+   }
 }
