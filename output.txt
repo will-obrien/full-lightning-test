@@ -1,0 +1,267 @@
+Buildfile: C:\Users\Will\Downloads\sonar-salesforce-plugin-4.1.6\sonar-salesforce-plugin\runner\antbuild.xml
+
+sonar:
+[sonar:sonar] Apache Ant(TM) version 1.10.5 compiled on July 10 2018
+[sonar:sonar] SonarQube Ant Task version: 2.2
+[sonar:sonar] Loaded from: file:/C:/Users/Will/Downloads/sonar-salesforce-plugin-4.1.6/sonar-salesforce-plugin/runner/sonar-ant-task-2.2.jar
+[sonar:sonar] INFO: Default locale: "en_AU", source code encoding: "utf8"
+[sonar:sonar] INFO: Work directory: C:\Users\Will\Desktop\CodeScan\full-lightning-test\.sonar
+[sonar:sonar] INFO: SonarQube Server 6.7
+[sonar:sonar] 10:39:42.768 INFO  - Publish mode
+[sonar:sonar] 10:39:43.369 INFO  - Load global settings
+[sonar:sonar] 10:39:43.420 DEBUG - GET 200 http://localhost:9000/api/settings/values.protobuf | time=43ms
+[sonar:sonar] 10:39:43.436 INFO  - Load global settings (done) | time=68ms
+[sonar:sonar] 10:39:43.445 INFO  - Server id: AWhZ0xI8xnBcbaNEaA2l
+[sonar:sonar] 10:39:43.456 INFO  - User cache: C:\Users\Will\.sonar\cache
+[sonar:sonar] 10:39:43.696 INFO  - Load plugins index
+[sonar:sonar] 10:39:43.704 DEBUG - GET 200 http://localhost:9000/api/plugins/installed | time=7ms
+[sonar:sonar] 10:39:43.750 INFO  - Load plugins index (done) | time=54ms
+[sonar:sonar] 10:39:43.750 DEBUG - Load plugins
+[sonar:sonar] 10:39:43.764 DEBUG - Load plugins (done) | time=14ms
+[sonar:sonar] 10:39:43.803 DEBUG - Plugins:
+[sonar:sonar] 10:39:43.803 DEBUG -   * CodeScan 4.1.6 (codescan)
+[sonar:sonar] 10:39:43.804 DEBUG -   * SonarJava 5.10.1.16922 (java)
+[sonar:sonar] 10:39:43.804 DEBUG -   * PMD 3.1.3 (pmd)
+[sonar:sonar] 10:39:44.039 INFO  - Process project properties
+[sonar:sonar] 10:39:44.044 DEBUG - Process project properties (done) | time=5ms
+[sonar:sonar] 10:39:44.076 INFO  - Load project repositories
+[sonar:sonar] 10:39:44.093 DEBUG - GET 200 http://localhost:9000/batch/project.protobuf?key=lightningtest3 | time=16ms
+[sonar:sonar] 10:39:44.177 INFO  - Load project repositories (done) | time=101ms
+[sonar:sonar] 10:39:44.246 DEBUG - Available languages:
+[sonar:sonar] 10:39:44.246 DEBUG -   * APEX => "sf"
+[sonar:sonar] 10:39:44.247 DEBUG -   * Visual Force & Lightning => "vf"
+[sonar:sonar] 10:39:44.247 DEBUG -   * Java => "java"
+[sonar:sonar] 10:39:44.260 INFO  - Load quality profiles
+[sonar:sonar] 10:39:44.272 DEBUG - GET 200 http://localhost:9000/api/qualityprofiles/search.protobuf?projectKey=lightningtest3 | time=11ms
+[sonar:sonar] 10:39:44.279 INFO  - Load quality profiles (done) | time=19ms
+[sonar:sonar] 10:39:44.303 INFO  - Load active rules
+[sonar:sonar] 10:39:44.324 DEBUG - GET 200 http://localhost:9000/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt&activation=true&qprofile=AWh9CiXlQA5ZPQbn9_qt&p=1&ps=500 | time=20ms
+[sonar:sonar] 10:39:44.490 DEBUG - GET 200 http://localhost:9000/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt&activation=true&qprofile=AWhZ03CnxnBcbaNEaBYe&p=1&ps=500 | time=133ms
+[sonar:sonar] 10:39:44.588 DEBUG - GET 200 http://localhost:9000/api/rules/search.protobuf?f=repo,name,severity,lang,internalKey,templateKey,params,actives,createdAt&activation=true&qprofile=AWh9CifDQA5ZPQbn9_tS&p=1&ps=500 | time=65ms
+[sonar:sonar] 10:39:44.618 INFO  - Load active rules (done) | time=315ms
+[sonar:sonar] 10:39:44.621 INFO  - Load metrics repository
+[sonar:sonar] 10:39:44.628 DEBUG - GET 200 http://localhost:9000/api/metrics/search?f=name,description,direction,qualitative,custom&ps=500&p=1 | time=7ms
+[sonar:sonar] 10:39:44.646 INFO  - Load metrics repository (done) | time=25ms
+[sonar:sonar] 10:39:44.677 WARN  - SCM provider autodetection failed. No SCM provider claims to support this project. Please use sonar.scm.provider to define SCM of your project.
+[sonar:sonar] 10:39:44.677 INFO  - Project key: lightningtest3
+[sonar:sonar] 10:39:44.677 DEBUG - Start recursive analysis of project modules
+[sonar:sonar] 10:39:44.678 INFO  - -------------  Scan CodeScan SCM
+[sonar:sonar] 10:39:44.771 INFO  - Load server rules
+[sonar:sonar] 10:39:44.859 DEBUG - GET 200 http://localhost:9000/api/rules/list.protobuf | time=87ms
+[sonar:sonar] 10:39:44.866 INFO  - Load server rules (done) | time=95ms
+[sonar:sonar] 10:39:44.893 INFO  - Base dir: C:\Users\Will\Desktop\CodeScan\full-lightning-test
+[sonar:sonar] 10:39:44.894 INFO  - Working dir: C:\Users\Will\Desktop\CodeScan\full-lightning-test\.sonar
+[sonar:sonar] 10:39:44.896 INFO  - Source paths: .
+[sonar:sonar] 10:39:44.896 INFO  - Source encoding: UTF-8, default locale: en_AU
+[sonar:sonar] 10:39:44.960 DEBUG - Declared extensions of language APEX were converted to sonar.lang.patterns.sf : **/*.trigger,**/*.cls
+[sonar:sonar] 10:39:44.961 DEBUG - Declared extensions of language Visual Force & Lightning were converted to sonar.lang.patterns.vf : **/*.page,**/*.component,**/*.app,**/*.evt,**/*.cmp,**/*.intf
+[sonar:sonar] 10:39:44.961 DEBUG - Declared extensions of language Java were converted to sonar.lang.patterns.java : **/*.java,**/*.jav
+[sonar:sonar] 10:39:44.965 DEBUG - Initializers : 
+[sonar:sonar] 10:39:44.966 INFO  - Index files
+[sonar:sonar] 10:39:44.995 DEBUG - '.project.license' indexed with language 'null'
+[sonar:sonar] 10:39:44.996 DEBUG - 'aura-api.js' indexed with language 'null'
+[sonar:sonar] 10:39:44.996 DEBUG - 'change-file.js' indexed with language 'null'
+[sonar:sonar] 10:39:44.996 DEBUG - 'ActionSendEmailHelper.js' indexed with language 'null'
+[sonar:sonar] 10:39:44.998 DEBUG - 'ChangeOwnerModalHelper.js' indexed with language 'null'
+[sonar:sonar] 10:39:44.998 DEBUG - 'ContinuationBrokerController.js' indexed with language 'null'
+[sonar:sonar] 10:39:44.998 DEBUG - 'dangle-test.js' indexed with language 'null'
+[sonar:sonar] 10:39:44.999 DEBUG - 'dot-notation.js' indexed with language 'null'
+[sonar:sonar] 10:39:44.999 DEBUG - 'ecma-intrinsics.js' indexed with language 'null'
+[sonar:sonar] 10:39:44.999 DEBUG - 'dot_notation_params.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.000 DEBUG - 'eqeqeq.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.000 DEBUG - 'handle-callback-err.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.001 DEBUG - 'javaTest.java' indexed with language 'java'
+[sonar:sonar] 10:39:45.001 DEBUG - 'new-parens.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.001 DEBUG - 'newfile.cls' indexed with language 'sf'
+[sonar:sonar] 10:39:45.002 DEBUG - 'no-constant-condition.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.002 DEBUG - 'no-control-regex.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.002 DEBUG - 'no-catch-shadow.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.003 DEBUG - 'no-div-regex.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.004 DEBUG - 'no-else-return.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.003 DEBUG - 'no-empty-character-class.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.004 DEBUG - 'no-eq-null.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.005 DEBUG - 'no-ex-assign.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.006 DEBUG - 'no-extend-native.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.006 DEBUG - 'no-extra-bind.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.006 DEBUG - 'no-extra-boolean-cast.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.007 DEBUG - 'no-func-assign.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.007 DEBUG - 'no-floating-decimal.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.008 DEBUG - 'no-global-assign-double-test.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.008 DEBUG - 'no-global-assign.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.009 DEBUG - 'no-invalid-regexp.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.009 DEBUG - 'no-implied-eval.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.009 DEBUG - 'no-irregular-whitespace.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.011 DEBUG - 'no-label-var.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.011 DEBUG - 'no-new-object.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.011 DEBUG - 'no-iterator.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.012 DEBUG - 'no-new-wrappers.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.012 DEBUG - 'no-new.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.012 DEBUG - 'no-obj-calls.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.013 DEBUG - 'no-octal-escape.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.013 DEBUG - 'no-param-reassign.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.014 DEBUG - 'no-proto.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.014 DEBUG - 'no-regex-spaces.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.014 DEBUG - 'no-plusplus.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.015 DEBUG - 'no-return-assign.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.015 DEBUG - 'no-self-compare.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.016 DEBUG - 'no-shadow-restricted-names.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.017 DEBUG - 'no-sparse-arrays.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.015 DEBUG - 'no-script-url.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.017 DEBUG - 'no-throw-literal.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.018 DEBUG - 'no-undef.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.018 DEBUG - 'no-underscore-dangle.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.018 DEBUG - 'no-unreachable.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.019 DEBUG - 'no-unused-expressions.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.021 DEBUG - 'secure-document.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.021 DEBUG - 'output.txt' indexed with language 'null'
+[sonar:sonar] 10:39:45.021 DEBUG - 'README.md' indexed with language 'null'
+[sonar:sonar] 10:39:45.022 DEBUG - 'sonar-project.properties' indexed with language 'null'
+[sonar:sonar] 10:39:45.022 DEBUG - 'sonarlint.json' indexed with language 'null'
+[sonar:sonar] 10:39:45.022 DEBUG - 'secure-window.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.023 DEBUG - 'unescapedTest.cmp' indexed with language 'vf'
+[sonar:sonar] 10:39:45.023 DEBUG - 'unescapedTest.page' indexed with language 'vf'
+[sonar:sonar] 10:39:45.024 DEBUG - 'valid-typeof.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.025 DEBUG - 'wrap-iife.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.024 DEBUG - 'whitespace-tests.js' indexed with language 'null'
+[sonar:sonar] 10:39:45.026 INFO  - 65 files indexed
+[sonar:sonar] 10:39:45.027 INFO  - Quality profile for java: Sonar way
+[sonar:sonar] 10:39:45.027 INFO  - Quality profile for sf: CodeScan way
+[sonar:sonar] 10:39:45.027 INFO  - Quality profile for vf: CodeScan way
+[sonar:sonar] 10:39:45.155 DEBUG - 'Generic Coverage Report' skipped because one of the required properties is missing
+[sonar:sonar] 10:39:45.156 DEBUG - 'Generic Test Executions Report' skipped because one of the required properties is missing
+[sonar:sonar] 10:39:45.162 DEBUG - 'Import of Checkstyle issues' skipped because one of the required properties is missing
+[sonar:sonar] 10:39:45.162 DEBUG - 'Import of PMD issues' skipped because one of the required properties is missing
+[sonar:sonar] 10:39:45.163 DEBUG - 'Import of SpotBugs issues' skipped because one of the required properties is missing
+[sonar:sonar] 10:39:45.164 DEBUG - 'Generic Coverage Report' skipped because one of the required properties is missing
+[sonar:sonar] 10:39:45.165 DEBUG - 'Generic Test Executions Report' skipped because one of the required properties is missing
+[sonar:sonar] 10:39:45.165 DEBUG - 'Import of Checkstyle issues' skipped because one of the required properties is missing
+[sonar:sonar] 10:39:45.166 DEBUG - 'Import of PMD issues' skipped because one of the required properties is missing
+[sonar:sonar] 10:39:45.166 DEBUG - 'Import of SpotBugs issues' skipped because one of the required properties is missing
+[sonar:sonar] 10:39:45.170 DEBUG - Sensors : CodeScan indexer -> CodeScan parser -> JavaSquidSensor -> Unit Test Runner -> CodeScan Checks -> SurefireSensor -> JaCoCoSensor -> JavaXmlSensor -> PmdSensor -> Zero Coverage Sensor -> CPD Block Indexer -> Apex CPD -> VisualForce/Lightning CPD
+[sonar:sonar] 10:39:45.170 INFO  - Sensor CodeScan indexer [codescan]
+[sonar:sonar] 10:39:45.178 DEBUG - 'newfile.cls' generated metadata  with charset 'UTF-8'
+[sonar:sonar] 10:39:45.186 DEBUG - Skipping aura class in non-aura folder: unescapedTest.cmp
+[sonar:sonar] 10:39:45.187 DEBUG - 'unescapedTest.page' generated metadata  with charset 'UTF-8'
+[sonar:sonar] 10:39:45.187 DEBUG - Lines of Code newfile.cls = 5
+[sonar:sonar] 10:39:45.188 DEBUG - Lines of Code unescapedTest.page = 8
+[sonar:sonar] 10:39:45.188 DEBUG - Total Lines of Code=  13
+[sonar:sonar] 10:39:45.193 INFO  - Running version 4.1.6-a12df0
+[sonar:sonar] 10:39:45.193 INFO  - Project has 13 lines
+[sonar:sonar] 10:39:45.970 DEBUG - CookieSpec selected: default
+[sonar:sonar] 10:39:45.976 DEBUG - Auth cache not set in the context
+[sonar:sonar] 10:39:45.978 DEBUG - Connection request: [route: {}->http://license.code-scan.com:80][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+[sonar:sonar] 10:39:45.988 DEBUG - Connection leased: [id: 0][route: {}->http://license.code-scan.com:80][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+[sonar:sonar] 10:39:45.989 DEBUG - Opening connection {}->http://license.code-scan.com:80
+[sonar:sonar] 10:39:46.035 DEBUG - Connecting to license.code-scan.com/52.200.123.104:80
+[sonar:sonar] 10:39:46.335 DEBUG - Connection established 192.168.0.5:51832<->52.200.123.104:80
+[sonar:sonar] 10:39:46.336 DEBUG - http-outgoing-0: set socket timeout to 60000
+[sonar:sonar] 10:39:46.337 DEBUG - Executing request POST /index.php/api/addProject?lid=3342324 HTTP/1.1
+[sonar:sonar] 10:39:46.337 DEBUG - Target auth state: UNCHALLENGED
+[sonar:sonar] 10:39:46.339 DEBUG - Proxy auth state: UNCHALLENGED
+[sonar:sonar] 10:39:46.745 DEBUG - Connection can be kept alive indefinitely
+[sonar:sonar] 10:39:46.755 DEBUG - Connection [id: 0][route: {}->http://license.code-scan.com:80] can be kept alive indefinitely
+[sonar:sonar] 10:39:46.755 DEBUG - Connection released: [id: 0][route: {}->http://license.code-scan.com:80][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+[sonar:sonar] 10:39:46.757 INFO  - CodeScan is licensed. Project lightningtest3 size is 13 lines
+[sonar:sonar] 10:39:46.757 INFO  - Sensor CodeScan indexer [codescan] (done) | time=1587ms
+[sonar:sonar] 10:39:46.757 INFO  - Sensor CodeScan parser [codescan]
+10:39:46.773 DEBUG - Connection manager is shutting down
+10:39:46.774 DEBUG - http-outgoing-0: Close connection
+10:39:46.774 DEBUG - Connection manager shut down
+[sonar:sonar] 10:39:46.831 DEBUG -   parsing apex 0/1: newfile.cls
+[sonar:sonar] 10:39:46.855 DEBUG -   parsing web 0/1: unescapedTest.page
+[sonar:sonar] 10:39:46.855 INFO  - Preparing to run CodeScan analysis
+[sonar:sonar] 10:39:46.855 DEBUG - Running Apex Symbol Facade 1
+[sonar:sonar] 10:39:46.859 DEBUG -   resolving 1 0/1: newfile.cls
+[sonar:sonar] 10:39:46.864 DEBUG - Running VisualForce Symbol Facade 1
+[sonar:sonar] 10:39:46.865 DEBUG -   resolving 1 0/1: unescapedTest.page
+[sonar:sonar] 10:39:46.866 DEBUG -   resolving 2 0/1: newfile.cls
+[sonar:sonar] 10:39:46.869 DEBUG -   dfa 0/1: newfile.cls
+[sonar:sonar] 10:39:46.876 DEBUG -   resolving 2 0/1: unescapedTest.page
+[sonar:sonar] 10:39:46.877 INFO  - Preparing to run CodeScan analysis (done) | time=22ms
+[sonar:sonar] 10:39:46.877 INFO  - Sensor CodeScan parser [codescan] (done) | time=120ms
+[sonar:sonar] 10:39:46.878 INFO  - Sensor JavaSquidSensor [java]
+[sonar:sonar] 10:39:47.136 INFO  - Configured Java source version (sonar.java.source): none
+[sonar:sonar] 10:39:47.146 INFO  - JavaClasspath initialization
+[sonar:sonar] 10:39:47.149 WARN  - Bytecode of dependencies was not provided for analysis of source files, you might end up with less precise results. Bytecode can be provided using sonar.java.libraries property.
+[sonar:sonar] 10:39:47.150 INFO  - JavaClasspath initialization (done) | time=4ms
+[sonar:sonar] 10:39:47.150 INFO  - JavaTestClasspath initialization
+[sonar:sonar] 10:39:47.150 INFO  - JavaTestClasspath initialization (done) | time=0ms
+[sonar:sonar] 10:39:47.409 DEBUG - ----- Classpath analyzed by Squid:
+[sonar:sonar] 10:39:47.410 DEBUG - -----
+[sonar:sonar] 10:39:47.413 DEBUG - ----- Classpath analyzed by Squid:
+[sonar:sonar] 10:39:47.413 DEBUG - -----
+[sonar:sonar] 10:39:47.414 INFO  - Java Main Files AST scan
+[sonar:sonar] 10:39:47.415 INFO  - 1 source files to be analyzed
+[sonar:sonar] 10:39:47.416 DEBUG - 'javaTest.java' generated metadata  with charset 'UTF-8'
+[sonar:sonar] 10:39:47.698 INFO  - 1/1 source files have been analyzed
+[sonar:sonar] 10:39:47.699 INFO  - Java Main Files AST scan (done) | time=285ms
+[sonar:sonar] 10:39:47.699 INFO  - Java Test Files AST scan
+[sonar:sonar] 10:39:47.699 INFO  - 0 source files to be analyzed
+[sonar:sonar] 10:39:47.699 INFO  - Java Test Files AST scan (done) | time=0ms
+[sonar:sonar] 10:39:47.699 INFO  - Sensor JavaSquidSensor [java] (done) | time=821ms
+[sonar:sonar] 10:39:47.699 INFO  - Sensor Unit Test Runner [codescan]
+[sonar:sonar] 10:39:47.699 INFO  - 0/0 source files have been analyzed
+[sonar:sonar] 10:39:47.699 DEBUG - Skipping test execution - no salesforce.username given...
+[sonar:sonar] 10:39:47.699 INFO  - Sensor Unit Test Runner [codescan] (done) | time=0ms
+[sonar:sonar] 10:39:47.700 INFO  - Sensor CodeScan Checks [codescan]
+[sonar:sonar] 10:39:47.712 INFO  - Execute CodeScan Apex Analysis 4.1.6
+[sonar:sonar] 10:39:47.999 DEBUG -   processing 0/1: newfile.cls
+[sonar:sonar] 10:39:48.085 INFO  - Execute CodeScan Apex Analysis 4.1.6 (done) | time=373ms
+[sonar:sonar] 10:39:48.086 INFO  - Execute CodeScan VF Analysis 4.1.6
+[sonar:sonar] 10:39:48.117 DEBUG -   processing 0/1: unescapedTest.page
+[sonar:sonar] 10:39:48.125 INFO  - Execute CodeScan VF Analysis 4.1.6 (done) | time=39ms
+[sonar:sonar] 10:39:48.126 INFO  - Execute Apex Metrics
+[sonar:sonar] 10:39:48.134 INFO  - Execute Apex Metrics (done) | time=8ms
+[sonar:sonar] 10:39:48.135 INFO  - Execute VF Metrics
+[sonar:sonar] 10:39:48.149 INFO  - Execute VF Metrics (done) | time=14ms
+[sonar:sonar] 10:39:48.149 INFO  - Sensor CodeScan Checks [codescan] (done) | time=449ms
+[sonar:sonar] 10:39:48.149 INFO  - Sensor SurefireSensor [java]
+[sonar:sonar] 10:39:48.150 INFO  - parsing [C:\Users\Will\Desktop\CodeScan\full-lightning-test\target\surefire-reports]
+[sonar:sonar] 10:39:48.151 INFO  - Sensor SurefireSensor [java] (done) | time=2ms
+[sonar:sonar] 10:39:48.151 INFO  - Sensor JaCoCoSensor [java]
+[sonar:sonar] 10:39:48.153 INFO  - Sensor JaCoCoSensor [java] (done) | time=2ms
+[sonar:sonar] 10:39:48.153 INFO  - Sensor JavaXmlSensor [java]
+[sonar:sonar] 10:39:48.154 INFO  - Sensor JavaXmlSensor [java] (done) | time=1ms
+[sonar:sonar] 10:39:48.154 INFO  - Sensor PmdSensor [pmd]
+[sonar:sonar] 10:39:48.155 INFO  - Sensor PmdSensor [pmd] (done) | time=0ms
+[sonar:sonar] 10:39:48.155 INFO  - Sensor Zero Coverage Sensor
+[sonar:sonar] 10:39:48.175 INFO  - Sensor Zero Coverage Sensor (done) | time=20ms
+[sonar:sonar] 10:39:48.175 INFO  - Sensor CPD Block Indexer
+[sonar:sonar] 10:39:48.175 DEBUG - org.sonar.scanner.cpd.deprecated.JavaCpdBlockIndexer is used for java
+[sonar:sonar] 10:39:48.182 DEBUG - Populating index from javaTest.java
+[sonar:sonar] 10:39:48.188 DEBUG - Not enough content in 'javaTest.java' to have CPD blocks, it will not be part of the duplication detection
+[sonar:sonar] 10:39:48.188 DEBUG - org.sonar.scanner.cpd.deprecated.DefaultCpdBlockIndexer is used for sf
+[sonar:sonar] 10:39:48.188 DEBUG - No CpdMapping for language sf
+[sonar:sonar] 10:39:48.188 DEBUG - org.sonar.scanner.cpd.deprecated.DefaultCpdBlockIndexer is used for vf
+[sonar:sonar] 10:39:48.188 DEBUG - No CpdMapping for language vf
+[sonar:sonar] 10:39:48.188 INFO  - Sensor CPD Block Indexer (done) | time=13ms
+[sonar:sonar] 10:39:48.188 INFO  - Sensor Apex CPD [codescan]
+[sonar:sonar] 10:39:48.189 DEBUG - Populating index from newfile.cls
+[sonar:sonar] 10:39:48.192 DEBUG - Not enough content in 'newfile.cls' to have CPD blocks, it will not be part of the duplication detection
+[sonar:sonar] 10:39:48.192 INFO  - Sensor Apex CPD [codescan] (done) | time=4ms
+[sonar:sonar] 10:39:48.192 INFO  - Sensor VisualForce/Lightning CPD [codescan]
+[sonar:sonar] 10:39:48.192 DEBUG - Populating index from unescapedTest.cmp
+[sonar:sonar] 10:39:48.193 DEBUG - 'unescapedTest.cmp' generated metadata  with charset 'UTF-8'
+[sonar:sonar] 10:39:48.203 DEBUG - Not enough content in 'unescapedTest.cmp' to have CPD blocks, it will not be part of the duplication detection
+[sonar:sonar] 10:39:48.203 DEBUG - Populating index from unescapedTest.page
+[sonar:sonar] 10:39:48.205 DEBUG - Not enough content in 'unescapedTest.page' to have CPD blocks, it will not be part of the duplication detection
+[sonar:sonar] 10:39:48.205 INFO  - Sensor VisualForce/Lightning CPD [codescan] (done) | time=13ms
+[sonar:sonar] 10:39:48.205 INFO  - No SCM system was detected. You can use the 'sonar.scm.provider' property to explicitly specify it.
+[sonar:sonar] 10:39:48.206 INFO  - 4 files had no CPD blocks
+[sonar:sonar] 10:39:48.206 INFO  - Calculating CPD for 0 files
+[sonar:sonar] 10:39:48.207 INFO  - CPD calculation finished
+[sonar:sonar] 10:39:48.333 INFO  - Analysis report generated in 123ms, dir size=33 KB
+[sonar:sonar] 10:39:48.364 INFO  - Analysis reports compressed in 30ms, zip size=12 KB
+[sonar:sonar] 10:39:48.364 INFO  - Analysis report generated in C:\Users\Will\Desktop\CodeScan\full-lightning-test\.sonar\scanner-report
+[sonar:sonar] 10:39:48.365 DEBUG - Upload report
+[sonar:sonar] 10:39:48.387 DEBUG - POST 200 http://localhost:9000/api/ce/submit?projectKey=lightningtest3&projectName=CodeScan%20SCM | time=21ms
+[sonar:sonar] 10:39:48.389 INFO  - Analysis report uploaded in 24ms
+[sonar:sonar] 10:39:48.390 INFO  - ANALYSIS SUCCESSFUL, you can browse http://localhost:9000/dashboard/index/lightningtest3
+[sonar:sonar] 10:39:48.391 INFO  - Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
+[sonar:sonar] 10:39:48.391 INFO  - More about the report processing at http://localhost:9000/api/ce/task?id=AWh9THGgQA5ZPQbn9_3g
+[sonar:sonar] 10:39:48.392 DEBUG - Report metadata written to C:\Users\Will\Desktop\CodeScan\full-lightning-test\.sonar\report-task.txt
+[sonar:sonar] 10:39:48.399 DEBUG - Post-jobs : 
+[sonar:sonar] 10:39:48.403 INFO  - Task total time: 4.591 s
+
+BUILD SUCCESSFUL
+Total time: 7 seconds
