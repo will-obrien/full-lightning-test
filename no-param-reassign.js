@@ -1,62 +1,56 @@
-//incorrect
-/*eslint no-param-reassign: "error"*/
 
-function foo(bar) {
-    bar = 13;
-}
 
-function foo(bar) {
-    bar++;
-}
+    function foo1(bar1) {
+        bar1 = 13;
+    }
 
-//correct
-/*eslint no-param-reassign: "error"*/
+    function foo2(bar2) {
+        bar2++;
+    }
 
-function foo(bar) {
-    var baz = bar;
-}
 
-//Examples of **correct** code for the default `{ "props": false }` option:
-/*eslint no-param-reassign: ["error", { "props": false }]*/
+    function foo3(bar3) {
+        var baz = bar3;
+    }
 
-function foo(bar) {
-    bar.prop = "value";
-}
 
-function foo(bar) {
-    delete bar.aaa;
-}
 
-function foo(bar) {
-    bar.aaa++;
-}
+    function foo4(bar4) {
+        bar4.prop = "value";
+    }
 
-//Examples of **incorrect** code for the `{ "props": true }` option:
-/*eslint no-param-reassign: ["error", { "props": true }]*/
+    function foo5(bar5) {
+        delete bar5.aaa;
+    }
 
-function foo(bar) {
-    bar.prop = "value";
-}
+    function foo6(bar6) {
+        bar6.aaa++;
+    }
 
-function foo(bar) {
-    delete bar.aaa;
-}
 
-function foo(bar) {
-    bar.aaa++;
-}
 
-//Examples of **correct** code for the `{ "props": true }` option with `"ignorePropertyModificationsFor"` set:
-/*eslint no-param-reassign: ["error", { "props": true, "ignorePropertyModificationsFor": ["bar"] }]*/
+    function foo7(bar7) {
+        bar7.prop = "value";
+    }
 
-function foo(bar) {
-    bar.prop = "value";
-}
+    function foo8(bar8) {
+        delete bar8.aaa;
+    }
 
-function foo(bar) {
-    delete bar.aaa;
-}
+    function foo9(bar9) {
+        bar9.aaa++;
+    }
 
-function foo(bar) {
-    bar.aaa++;
-}
+
+
+    function foo0(bar0) {
+        bar0.prop = "value";
+    }
+
+    function foo11(bartt) {
+        delete bartt.aaa;
+    }
+
+    function foo12(bar12) {
+        bar12.aaa++;
+    }

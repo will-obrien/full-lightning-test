@@ -1,0 +1,1 @@
+$Lightning.use("c:LightningVFApp", function() { $Lightning.createComponent("c:CustomerStoreCaseVerification", { PhoneNum: phoneNumber }, "lightning", function(cmp) { $A.eventService.addHandler({ "event": "c:customerCV", "handler": storeCallHandler }); }); });
